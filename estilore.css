@@ -1,0 +1,213 @@
+/* ===== Reset básico ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===== Layout geral ===== */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+.press-start-2p-regular {
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* ______________________________________- */
+header {
+  background-color: #111;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+.barra-de-busca {
+  display: flex;
+  justify-content: left;
+}
+
+.barra-de-busca input[type="text"] {
+  padding: 8px 12px; /* Engorda de dentro pra fora */
+  font-size: 16px; /* Aumenta o tamanho. */
+  border: 1px solid #4b4a4a; /* define uma borda de contorno em volta */
+  border-radius: 6px 0 0 6px; /* deixa a borda arredondada. */
+  outline: none; /* Remove  a marca de seleção assim que o usuário clicar. */
+  width: 200px; /* Define a largura para exatamente 200px */
+}
+
+.barra-de-busca > button {
+  padding: 8px 12px;
+  font-size: 16px;
+  background-color: #242424;
+  color: white;
+  border: 1px solid #bbbbbb;
+  border-left: none;
+  border-radius: 0 6px 6px 0;
+  cursor: pointer;
+}
+
+.barra-de-busca button:hover {
+  background-color: #6d6d6d;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#h1-todos-os-viloes {
+  padding-top: 30px;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 16px;
+  padding: 0;
+  margin: 0;
+}
+
+.menu a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.menu a:hover {
+  text-decoration: underline;
+}
+
+/* ___________________________________________- */
+
+.container {
+  max-width: 650px;
+  margin: 0 auto;
+  padding: 0 16px;
+  box-sizing: border-box; /* Serve para garantir que o padding, não vai ultrapasar a delimitação do width */
+  background-color: #f4f4f4; /* Cor de fundo da área principal */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+}
+
+.container > article {
+  text-align: justify;
+}
+
+/* ===== Parallax (usar com moderação) ===== */
+.parallax {
+  background-image: url('sua-imagem.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  height: 100vh; /* Altura da seção parallax */
+}
+
+#imagem-fundo-vila {
+  background-image: url(imagens/ambientes/vila.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+#imagem-fundo-lago {
+  background-image: url(imagens/ambientes/lago.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+#imagem-fundo-castelo {
+  background-image: url(imagens/ambientes/castelo.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+#imagem-fundo-ilha {
+  background-image: url(imagens/ambientes/ilha.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+}
+
+h2 {
+  padding: 20px;
+}
+
+p {
+  padding: 1cap;
+  
+}
+
+img {
+  margin: auto;
+}
+/*___________________________________________________________________________*/
+/* ===== Tabela de dados ===== */
+table {
+    border: 1px black solid; /* Para criar uma fina linnha no contorno */
+    border-collapse: collapse; /* elimina o espaço entre as "células" */
+    background-color: white;
+    box-shadow: 5px 5px 4px #0000007c; /* Adiciona uma sombra ao fundo */
+    margin: auto;
+}
+
+#tabela-imagem-fundo {
+  background-image: url(imagens/imagem-fundo/imagem-fundo-tabela.jpeg);
+  background-size: 100vw auto;
+  background-repeat: no-repeat center center;
+  /* background-repeat: no-repeat; */
+  /* background-size: cover; */
+}
+
+caption {
+    padding-bottom: 10px;
+    color: #BFA084;
+    font-size: 25pt;
+}
+
+tbody > tr:nth-child(2n) { /* efeito zebrado */
+    background-color:lightgray;
+}
+
+th, td {
+    border: 1px black solid; /* Cria uma fina linha para o contorno */
+    border-collapse: collapse; /* Elimina o espaço entre as "células" */
+    padding: 10px; /* Cria um distancimento interno, ampliando de dentro para fora */
+}
+
+/* ______________________________________________________________- */
+
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+.linkedin-link {
+  display: inline-flex; /* Alinha o ícone com o texto */
+  align-items: center;
+  gap: 6px;
+  color: #0e76a8;
+  text-decoration: none;
+  margin-top: 8px;
+}
+
+.linkedin-link:hover {
+  text-decoration: underline;
+}
+
+footer img {
+  display: block;
+}
+
+
+
+
